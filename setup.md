@@ -159,27 +159,6 @@ Notepad++ (Windows), TextEdit (macOS), Gedit (GNU/Linux), GNU Nano, Vim.
 Alternatively, there are IDE's (integrated developer environments) that have
 more features specifically for coding such as VS Code; there are also IDEs
 specific to languages will be listed in the appropriate section(s) below.
-## Project Demo Repository
-
-We'll be showing you how to manage an example academic software project. 
-If you've completed our [Version Control with git workshop (linked here)](https://southampton-rsg-training.github.io/git-novice/) , you'll have an example project.
-If not, please [create a copy of our demo repository from this template (linked here)](https://github.com/Southampton-RSG-Training/project-novice-climate-analysis/generate),
-and name it `climate-analysis`. You don't need to run this code as part of the course! It's purely for demonstration purposes.
-
-## Install Visual Studio Code
-
-This workshop involves editing code files. 
-Whilst you can use any text editor to do this, some code editors or Integrated Development Environments (IDEs) have features designed to make coding easier.
-If you're already using a code editor or IDE (e.g. [Atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) or [Spyder](https://www.spyder-ide.org/)), 
-stick with what you're comfortable with. If not, we'd recommend installing [Visual Studio Code (link here)](https://code.visualstudio.com/).
-
-### Windows / MacOS
-Go to [the Visual Studio Code website](https://code.visualstudio.com/), and download and run the installer.
-
-### Linux
-If you're on **Ubuntu**, Visual Studio Code should be available through the software centre! 
-If not, [follow the detailed instructions here](https://code.visualstudio.com/docs/setup/linux) to install it.
-
 ## Open a Terminal ##
 
 For this lesson, first you need to be able to open a terminal:
@@ -286,98 +265,46 @@ $ git clone https://github.com/Southampton-RSG-Training/git-novice
 `cd` will move to your home directory, and `git clone` will download a copy of the materials.
 
 {% include links.md %}
-## Python Setup ##
+## Install R and RStudio ##
 
-IDEs: PyCharm, Spyder, VS Code
+R is a programming language and software environment for statistical computing and graphics. The RStudio Integrated Development Environment (IDE) is a set of tools designed to help you be more productive with R.
 
-We use Python 3*. The “Anaconda3” package provides everything Python-related you will need for the workshop. 
-To install [Anaconda](https://www.anaconda.com/products/individual), follow the instructions below.
+We need to install R and RStudio: 
+The latest links can be found on the [RStudio downloads page](https://www.rstudio.com/products/rstudio/download/#download)
 
-Some old research projects may be in Python 2 but Python 2 has been retired and new projects should be in Python 3.
+### R
 
-### Windows
-Download the latest Anaconda Windows installer. Double-click the installer and follow the instructions. **When asked “Add Anaconda to my PATH environment variable”, answer “yes”. It will warn you not to, but it's required for it to be found by git bash** After it’s finished, close and reopen any open terminals to reload the updated PATH and allow the installed Python to be found.
+R can be found at [https://cran.rstudio.com/](https://cran.rstudio.com/), from here pick your OS and download the latest release, see below for direct links to your OS.
 
-Once the Anaconda installation is finished you will be asked if you want the installer to initialize Anaconda3 by
-running conda init? You should select yes. Alternatively/additionally you will need to run the following command in 
-GitBash
+#### Windows
+- [https://cran.rstudio.com/bin/windows/base/](https://cran.rstudio.com/bin/windows/base/)
 
-{: .bash}
-~~~
-conda init bash
-~~~
+#### Mac OS
+- If prompted, choose to allow downloads from cran.rstudio.com.
 
-Then close and reopen GitBash.
+- [https://cran.rstudio.com/bin/macosx/](https://cran.rstudio.com/bin/macosx/)
+  - For intel based macs choose R-4.*.*.pkg
+  - For ARM based macs (M1 etc.) choose R-4.*.*-arm64.pkg
 
-Please test the python install open GitBash (or your favorite terminal) and run the following command to verify that the installation was successful.
-
-{: .bash}
-~~~
-cd ~
-python
-~~~
-
-You can then type the following to exit:
-{: .python}
-~~~
-quit()
-~~~
-
-{: .callout}
-~~~
-In some cases GitBash will hang on this command and not launch the Python interpreter. 
-In this case close and reopen git bash and issue the following commands:
-~~~
-
-{: .bash}
-~~~
-cd ~
-echo 'alias python="winpty python.exe"' >> .bashrc
-source .bashrc
-python
-~~~
+#### Linux
+- R is included on many linux distros check to see if it is already present. Else use your package manager (snap, apt, yum), or look [here](https://cran.rstudio.com/bin/linux/)
 
 
-### Mac OS X
+### RStudio
 
-#### Mac OS Intel
-Download the latest Anaconda Mac OS X installer. Double-click the .pkg file and follow the instructions.
+Your OS should be detected and a link provided under step 2 on this page [RStudio downloads page](https://www.rstudio.com/products/rstudio/download/#download).
+Else select your OS from the list under All Installers.
 
-#### Mac OS M1
-If you have a M1 Mac you need a specific version of Anaconda follow the link below. 
+#### Windows
 
-[M1 Compatible Anaconda](https://repo.anaconda.com/archive/Anaconda3-2022.05-MacOSX-arm64.pkg)
+Download and run the .exe file and follow instructions given by your OS.
 
-Once the Anaconda installation is finished you will be asked if you want the installer to initialize Anaconda3 by
-running conda init? You should select yes.
+#### Mac OS
 
-### Linux
-Download the latest Anaconda Linux Installer.
+Download the .dmg file.
+- If prompted, choose to allow downloads from rstudio.com.
+- Open the downloaded dmg archive from the Downloads folder.
+- Drag the RStudio icon to the Applications folder to install.
 
-Install via the terminal like this (you will need to change the version number to the latest version):
-
-First move to the folder where you downloaded the installer, this is likely to be the Downloads folder e.g.
-
-~~~
-$ cd ~/Downloads
-~~~
-{: .language-bash}
-
-~~~
-$ bash Anaconda3-2021.11-Linux-x86_64.sh
-~~~
-{: .language-bash}
-
-Answer ‘yes’ to allow the installer to initialize Anaconda3 in your .bashrc.
-## Download Data for Python Lesson ##
-
-Now we are ready to download the code that we need for this lesson. Open a terminal on your machine, and enter:
-~~~
-$ cd
-$ git clone https://github.com/Southampton-RSG-Training/python-novice
-~~~
-{: .language-bash}
-
-`cd` will move to your home directory, and `git clone` will download a copy of the materials.
-
-{% include links.md %}
+#### Linux
+Download the appropriate install file (.rpm or .deb) for your distro.
