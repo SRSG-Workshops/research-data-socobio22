@@ -49,8 +49,8 @@ helper:
   - "Hugh Warden"
 # ======================================================================================================================
 
-setup_docs:
-  - remote_desktop.md
+# setup_docs:
+#   - remote_desktop.md
 
 # Details about the lessons
 lessons:
