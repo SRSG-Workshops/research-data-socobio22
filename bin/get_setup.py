@@ -55,14 +55,14 @@ copy_tree(f"submodules/setup-documents/fig", "fig/")
 with open("setup.md", "w") as file_out:
     for n, (lesson_title, lesson_setups) in enumerate(setup_docs.items()):
         if n == 0:
-            file_out.write(f'# Setup for {lesson_title}')
+            file_out.write(f'---\ntitle: Setup for {lesson_title}\n---\n')
         else:
-            file_out.write('\n' + f'# {lesson_title}')
+            file_out.write('\n\n' + f'# {lesson_title}')
 
         for setup in lesson_setups:
             doc_filepath = 'submodules/setup-documents/markdown/' + setup
             with open(doc_filepath, "r", encoding="utf-8") as file_in:
-                file_out.write('\n' + file_in.read())
+                file_out.write('\n\n' + file_in.read())
 
 
 
