@@ -30,7 +30,7 @@ with open('_config.yml') as config:
 try:
     setup_docs = {website_config['title']: [x for x in website_config['setup_docs']]}
 except (KeyError, TypeError):  # KeyError for when there is no setup_docs, TypeError for when it's empty
-    setup_docs = {}
+    setup_docs = {website_config['title']: []}
 
 # create a list of setup files already included, so we dont add duplicates
 setups_included = list(setup_docs.values())
@@ -53,8 +53,12 @@ copy_tree(f"submodules/setup-documents/fig", "fig/")
 #for each element in the list
 #paste into a string 'submodules/setup-documents/markdown'+setup docs element
 with open("setup.md", "w") as file_out:
-    for lesson_title, lesson_setups in setup_docs.items():
-        file_out.write('\n' + f'# {lesson_title}')
+    for n, (lesson_title, lesson_setups) in enumerate(setup_docs.items()):
+        if n == 0:
+            file_out.write(f'# Setup for {lesson_title}')
+        else:
+            file_out.write('\n' + f'# {lesson_title}')
+
         for setup in lesson_setups:
             doc_filepath = 'submodules/setup-documents/markdown/' + setup
             with open(doc_filepath, "r", encoding="utf-8") as file_in:
