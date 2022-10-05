@@ -1,44 +1,5 @@
-# Setup for all episodes.
-## Remote Desktop Client 
 
-In this workshop we will be using remote desktops that come pre-configured with all the
-resources you will need to complete the course. Prior to that you will need to download
-the windows remote desktop client suitable for your operating system.
-
-Link to Microsoft's website, please use the table to pick the link to the app appropriate to your system:
-Note: For Windows users this is the microsoft store.
-
-[Remote Desktop Clients](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)
-
-The remote desktop will be available to you for the time allocated to your workshop 
-and potentially include some 'out of hours' time.
-
-During the course we will have time dedicated to helping you install the software on 
-your own computer so afterwards you can continue to use the skills you have learnt.
-
-### Connecting to your remote desktop
-
-1. Login to Microsoft Teams using your University account. 
-2. Navigate to the team (Request to join the team if you are not already a member).
-3. Register for the lab using the provided link, the registration link will be emailed and in the teams channel, register with the same account you use for Teams. You cannot proceed until you have registered.
-4. Open the Azure Lab Services tab. The labs will start and stop automatically, don't worry if it is currently stopped.
-![Azure Lab Tab](fig/setup-lab-tab.png)
-6. You need to copy your RDP information click the three dots in the lower right corner.
-![RDP Info](fig/setup-rdp-info.png)
-7. You will be prompted to copy the remote desktop information copy it to your clipboard.
-8. Open your remote desktop app that we installed earlier.
-9. Click on the + and select Add PC, paste in the RDP information. (Green highlights)
-![Add PC to RD client](fig/setup-add-RDP-to-client.png)
-10. Optionally add the user account to the PC. The username is 'lab-user' the password is 'Qwerty2000'
-
-Note: the Virtual computers will automatically start before the workshop and stop at the end. 
-If you are inactive for more than 15 minutes, they will also switch off. They can be re-started from the Lab Services Tab
-but this can take up to 5 minutes, and you may need to ask the instructor. Outside the sessions if you have been
-allocated additional time you may log in to your session and continue working.
-
-<hline/>
-## The instructions to install the software on your own computer are provided below.
-
+# Best Practices in Data Organisation Using Spreadsheets
 ## Introduction to the Data for this Lesson ##
 The data used in this lesson comes from a project observing a small mammal community in southern
 Arizona, US. This is part of a project studying the effects of rodents and ants on the plant
@@ -60,8 +21,8 @@ This is a real dataset that has been used in over 100 publications. It is publis
 ## Download Data for Spreadsheets Lesson ##
 
 For the purposes of training, this data has been simplified a bit (you can still download the full dataset and work with it using exactly the same tools we will learn here). This simplified version of data is available from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). In this lesson, you will need to download the following five files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459):
--  [messy_survey_data.xls](/data/messy_survey_data.xls) - this is the main file we will work with. It includes messy survey data
-(in Excel's `.xls` format) that you will clean during the lesson and use to learn some best practices in
+-  [messy_survey_data.xls](data/messy_survey_data.xlsx) - this is the main file we will work with. It includes messy survey data
+(in Excel's `.xlsx` format) that you will clean during the lesson and use to learn some best practices in
 data organisation.
 - [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the cleaned survey data
     Fields: `record_id`, `month`, `day`, `year`, `plot_id`, `species_id`, `sex`, `hindfoot_length`, `weight`
@@ -73,6 +34,7 @@ data organisation.
 files combined into one clean file (a good example of what a clean data file should look like)
 Fields: `record_id`, `month`, `day`, `year`, `plot_id`, `species_id`, `sex`, `hindfoot_length`, `weight`, `genus`,
 `species`, `taxa`, `plot_type`
+
 ## Install Excel ##
 
 Excel is commonly provided by most institutions via the Microsoft Office suite via an instututional licence. 
@@ -111,6 +73,7 @@ as it can open Excel spreadsheets, which is the format of the data we will work 
   - Install LibreOffice by going to [the installation page](https://www.libreoffice.org/download/libreoffice-fresh/). The version for Linux should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you do not need to make one. Your download should begin automatically.
 - Install LibreOffice
 - Once the installer is downloaded, double click on it and LibreOffice should install.
+# Data Cleaning with OpenRefine
 ## Download Data for OpenRefine Lesson ##
 
 The Portal Project Teaching Dataset is a real dataset that has been used in over 100 publications. We have simplified it
@@ -159,6 +122,7 @@ Notepad++ (Windows), TextEdit (macOS), Gedit (GNU/Linux), GNU Nano, Vim.
 Alternatively, there are IDE's (integrated developer environments) that have
 more features specifically for coding such as VS Code; there are also IDEs
 specific to languages will be listed in the appropriate section(s) below.
+# The Bash Shell
 ## Open a Terminal ##
 
 For this lesson, first you need to be able to open a terminal:
@@ -253,6 +217,7 @@ This should download all the content for the lesson to a new directory.
 Please let the instructors know if you run into any problems.
 
 {% include links.md %}
+# Version Control with Git
 ## Download Data for Git Lesson ##
 
 Now we are ready to download the code that we need for this lesson, using Git on the command line. Open a terminal on your machine, and enter:
@@ -265,6 +230,7 @@ $ git clone https://github.com/Southampton-RSG-Training/git-novice
 `cd` will move to your home directory, and `git clone` will download a copy of the materials.
 
 {% include links.md %}
+# Introductory Data Management with R
 ## Install R and RStudio ##
 
 R is a programming language and software environment for statistical computing and graphics. The RStudio Integrated Development Environment (IDE) is a set of tools designed to help you be more productive with R.
