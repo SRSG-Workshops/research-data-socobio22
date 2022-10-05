@@ -50,7 +50,7 @@ helper:
 # ======================================================================================================================
 
 setup_docs:
-  - remote_desktop.md
+#   - remote_desktop.md
 
 # Details about the lessons
 lessons:
@@ -83,10 +83,9 @@ lessons:
     gh-name: git-novice
     type: episode
     branch: main
-    date: 15 November 20222
+    date: 15 November 2022
     start-time: 09:15
     order: 4
-
 
   - title: Data Analysis and Visualization in R
     gh-name: r-novice
