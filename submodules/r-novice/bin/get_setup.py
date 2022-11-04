@@ -61,4 +61,3 @@ if site_kind == 'lesson':
         except:
             log.error("Unable to move figures")
 
-
