@@ -441,9 +441,9 @@ but it does find the copy in `thesis` that we didn't delete.
 > >
 > > Both **1** and **2** will leave you with a file called `statistics.txt` at the end, but if you use `cp` it will be a copy, and you'll still have your incorrectly-named original.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Moving and Copying
 >
