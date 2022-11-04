@@ -32,7 +32,7 @@ choices you make now will limit your ability to work with the data in the future
 > The best layout for data entry might change dependent on the specific use case. Do not stick to a format just because
 > you have used it previously. Choose the best format on a case-by-case basis. (And if you need to convert between formats,
 > ideally you would automate the conversion with a script in, say, Python or R.
-> {: .callout}
+{: .callout}
 
 ## Structuring data in spreadsheets
 
