@@ -122,7 +122,6 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 > > entered these dates most probably used the US version of Excel where month comes before day. If we did not have such
 > > entries, we would not be able to tell what date was entered! For example, is '7/11' '7th November' or '11th July'?
 > {: .solution}
->
 {: .challenge}
 
 ## Issues with missing bits of dates
@@ -190,7 +189,7 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > ## Note on missing bits of dates
 > Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situations where spreadsheet programmes are
 > making guesses on what your data should be.
-> {: .callout}
+{: .callout}
 
 ## Issues when exporting data containing dates
 
