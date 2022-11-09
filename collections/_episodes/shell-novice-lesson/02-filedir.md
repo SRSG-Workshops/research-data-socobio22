@@ -517,9 +517,8 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > > **4** is correct. `ls` shows the contents of the path you give it,
 > > and `../backup` means "Go up one level, then into a directory called `backup`".
 > > 
-> > {: .solution}
-> 
-> {: .challenge}
+> {: .solution}
+{: .challenge}
 
 
 > ## `ls` reading comprehension
