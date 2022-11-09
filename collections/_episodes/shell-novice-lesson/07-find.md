@@ -543,9 +543,9 @@ about them."
 > > 3. Correct, since we have supplied `-w` to indicate that we are looking for a complete word, hence only "and the presence of absence:" is found.
 > > 4. Incorrect. `-i` indicates we wish to do a case insensitive search which isn't required. The results are the same as 1.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 
 > ## `find` pipeline reading comprehension
@@ -562,9 +562,9 @@ about them."
 > >
 > > Find all files (in this directory and all subdirectories) that have a filename that ends in `.dat`, count the number of files found, and sort the result. Note that the `sort` here is unnecessary, since it is only sorting one number.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Matching `ose.dat` but not `temp` {}
 >
@@ -589,8 +589,8 @@ about them."
 > > 3. Correct answer. It first executes the `find` command to find those files matching the '*ose.dat' pattern, which will match on exactly those that end in `ose.dat`, and then `grep` will search those files for "temp" and only report those that don't contain it, since it's using the `-v` flag to invert the results.
 > > 4. Incorrect.
 > > 
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 {% include links.md %}
