@@ -492,9 +492,9 @@ but it does find the copy in `thesis` that we didn't delete.
 > >
 > > So as it's in the directory above the current one (`..`), it won't show up when you do `ls` in the current directory.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Organizing Directories and Files
 >
@@ -547,9 +547,9 @@ but it does find the copy in `thesis` that we didn't delete.
 > > > ~~~
 > > > {: .language-bash}
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Copy with Multiple Filenames
 >
@@ -575,7 +575,7 @@ but it does find the copy in `thesis` that we didn't delete.
 > > > ~~~
 > > > {: .output}
 > >
-> > {: .solution}
+> {: .solution}
 >
 > What does `cp` do when given three or more filenames, as in:
 >
@@ -608,8 +608,8 @@ but it does find the copy in `thesis` that we didn't delete.
 > > Will not fail even though both of the arguments are existing files - it will copy the contents
 > > of `intro.txt` *over* the contents of `methods.txt`. So be careful!
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 {% include links.md %}
