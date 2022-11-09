@@ -404,9 +404,9 @@ wc -l "$@" | sort -n
 > > This would have caused an error, as we expect the second and third arguments to be numbers for `head` and `tail`!
 > >
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Script reading comprehension
 >
@@ -456,8 +456,8 @@ wc -l "$@" | sort -n
 > >
 > > This probably isn't quite what we were hoping for!
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 {% include links.md %}
