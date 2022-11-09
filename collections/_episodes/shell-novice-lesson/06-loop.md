@@ -488,9 +488,9 @@ files before you operate on them!
 > >
 > > This is because, whilst it runs once for each file containing `.dat`, it doesn't use the loop variable, it prints out the *entire* output of `ls`. The second version will instead print out each datafile on a seperate line (as `ls [file]` will print the file if it exists).
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 
 > ## Saving to a File in a Loop - Part One
@@ -520,9 +520,9 @@ files before you operate on them!
 > > 3. Incorrect, since the file `xylose.dat` would not have existed when `*.dat` would have been expanded.
 > > 4. Incorrect.
 > > 
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 
 > ## Saving to a File in a Loop - Part Two
@@ -559,9 +559,9 @@ files before you operate on them!
 > > 3. Incorrect, since `maltose.txt` has a `.txt` extension and not a `.dat` extension, so won't match on `*.dat` and won't be included in the loop.
 > > 4. Incorrect, since the `>>` operator redirects all output to the `sugar.dat` file, so we won't see any screen output.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 
 > ## Doing a Dry Run
@@ -604,8 +604,8 @@ files before you operate on them!
 > >
 > > Version 2 is the one that successfully acts as a dry run. In version 1, since the `>` file redirect is not within quotes, the script will create three files `analyzed-basilisk.dat`, `analyzed-minotaur.dat`, and `analyzed-unicorn.dat` which is not what we want.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 {% include links.md %}
