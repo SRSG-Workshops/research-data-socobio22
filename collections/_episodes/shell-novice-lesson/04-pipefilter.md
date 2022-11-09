@@ -362,9 +362,9 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > > However, if we pass `sort` the `-n` flag, it sorts in *numeric* order - so if it encounters a character that's a number, it reads the line up until it hits a non-numeric character. In this case, `22` is greater than `6` (and everything else), so it goes to the end of the file.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## What does `>>` mean?
 >
@@ -388,9 +388,9 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > > However, if there *is* a file, then `>` will *overwrite* the contents of the file, whilst `>>` will *append* to the existing contents.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Piping commands together
 >
@@ -407,9 +407,9 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > > **1** has the correct commands, but incorrectly tries to use `>` to chain them together. `>` is used to send the output of a command to a **file**, not to another command.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Why does `uniq` only remove adjacent duplicates?
 >
@@ -447,9 +447,9 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > > In this case, `sort | uniq` would work.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 > ## Pipe reading comprehension
 >
@@ -500,9 +500,9 @@ If you're interested in how pipes work in more technical detail, see the descrip
 > >
 > > 5. Finally, `> final.txt` sends the output to a file called `final.txt`.
 > >
-> > {: .solution}
+> {: .solution}
 >
-> {: .challenge}
+{: .challenge}
 
 For those interested in the technical details of how pipes work:
 
