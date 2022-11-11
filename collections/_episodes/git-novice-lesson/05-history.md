@@ -156,7 +156,6 @@ index 277d6c7..c463f71 100644
 >
 > Git has some more advanced ways of referencing past commits. In place of `HEAD~1` you can use `HEAD~` or `HEAD@{1}`,
 > or you can even use text to ask more advanced questions, like `git diff HEAD@{"yesterday"}` or `git diff HEAD@{"3 months ago"}`!
->
 {: .callout}
 
 ### Restoring Files
@@ -228,8 +227,7 @@ which is the last saved revision.
 >
 > Newer versions of `git` have added `git restore` that work the same way as `git checkout` for recovering files.
 > We teach `git checkout`, as some systems (for example, high-performance computing clusters) will only have older versions of Git.
->
-> {: .callout}
+{: .callout}
 
 
 If we want to go back even further,
