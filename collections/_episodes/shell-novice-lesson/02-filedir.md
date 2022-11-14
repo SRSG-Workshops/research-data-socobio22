@@ -113,8 +113,7 @@ $ pwd
 > Unix one by one, without any master plan, by people who were immersed in
 > its jargon. The result is as inconsistent as the roolz uv Inglish
 > speling, but we're stuck with it now.
-> 
-> {: .callout}
+{: .callout}
 
 > ## Real typing timesavers
 >
@@ -126,8 +125,7 @@ $ pwd
 > We can also move to the beginning of a line in the shell by typing `^A`
 > (which means Control-A) and to the end using `^E`. Much quicker on long
 > lines than just using the left/right arrow keys.
-> 
-> {: .callout}
+{: .callout}
 
 ### How file systems are organised
 
@@ -302,8 +300,7 @@ which doesn't exist.
 > magically turn it into a recording of whalesong, though it *might*
 > cause the operating system to try to open it with a music player
 > when someone double-clicks it.
-> 
-> {: .callout}
+{: .callout}
 
 For this exercise, we need to change our working directory to `shell-novice`, and then `shell` (within the `shell-novice` directory). As we have already used cd to move into `shell-novice` we can get to `shell` by using `cd` again:
 
@@ -360,8 +357,7 @@ rather than from the root of the file system.
 > however,
 > most people use them interchangeably or inconsistently,
 > so we will too.
-> 
-> {: .callout}
+{: .callout}
 
 If we run `ls -F /test_directory` (*with* a leading slash) we get a different response,
 because `/test_directory` is an **absolute path**:
@@ -477,8 +473,7 @@ but we'll see some uses for it soon.
 >
 > How `.`, `..` and `~` behave is a feature of how Bash represents
 > your computer's file system, not any particular program you can run in it.
-> 
-> {: .callout}
+{: .callout}
 
 Another handy feature is that we can reference our home directory with `~`, e.g.:
 
@@ -516,9 +511,7 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > >
 > > **4** is correct. `ls` shows the contents of the path you give it,
 > > and `../backup` means "Go up one level, then into a directory called `backup`".
-> > 
 > {: .solution}
-> 
 {: .challenge}
 
 
@@ -546,7 +539,6 @@ path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`.
 > > Then, in order to get the output in reverse order, and with a `/` after the directories, we need the `-r` and `-F` flags.
 > > 
 > {: .solution}
-> 
 {: .challenge}
 
 {% include links.md %}
