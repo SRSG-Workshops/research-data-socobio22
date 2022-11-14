@@ -71,8 +71,7 @@ it.
 > Otherwise, we'll be here all day!
 > Once we're confident our commands, code, scripts, etc. work the way we want, we
 > can then test them on the entire data set.
->
-> {: .callout}
+{: .callout}
 
 The `.csv` extension indicates that these files are in Comma Separated Value
 format,
@@ -315,8 +314,7 @@ so that you and other people can put those programs into pipes to multiply their
 > any command line parameters, so it reads from standard input, but we
 > have told the shell to send the contents of `sc_climate_data_10.csv` to `wc`'s
 > standard input.
->
-> {: .callout}
+{: .callout}
 
 If you're interested in how pipes work in more technical detail, see the description after the exercises.
 
@@ -547,6 +545,6 @@ For those interested in the technical details of how pipes work:
 >
 > ![1. Redirects and Pipes](fig/redirects-and-pipes.png)
 >
-> {: .callout}
+{: .callout}
 
 {% include links.md %}
