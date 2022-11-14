@@ -149,8 +149,7 @@ the **variable** called `filename`.
 > When we need it later, we extract that value from the container by referencing that container's name 'count'.
 > We can also change what's in the container, essentially changing the value of the variable. From that point on,
 > when we extract the value from the variable, it will be the new value.
->
-> {: .callout}
+{: .callout}
 
 Inside the loop,
 we get the variable's value by putting `$` in front of it:
@@ -177,8 +176,7 @@ so this loop prints out the first three lines of each data file in turn.
 > script runs, it is considered best practice to use indentation to highlight the loop body.
 > In general programming, indentation is very important. Without indentation in code blocks
 > such as these, code becomes much harder to read.
->
-> {: .callout}
+{: .callout}
 
 ### Dos and don'ts of variable naming
 
@@ -354,8 +352,7 @@ GTTCTGCTAA
 > {: .bash}
 >
 > but it's simpler just to avoid using spaces (or other special characters) in filenames.
->
-> {: .callout}
+{: .callout}
 
 
 ### File renaming revisited
@@ -438,8 +435,7 @@ files before you operate on them!
 > then press "enter" to run the loop with the actual `mv` commands. This
 > isn't foolproof, but it's a handy way to see what's going to happen when
 > you're still learning how loops work.
->
-> {: .callout}
+{: .callout}
 
 
 ## Exercises
