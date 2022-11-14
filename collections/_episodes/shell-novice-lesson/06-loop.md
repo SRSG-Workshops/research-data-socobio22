@@ -464,7 +464,7 @@ files before you operate on them!
 > > ~~~
 > > for datafile in *.dat
 > > do
->	> ls $datafile
+>	ls $datafile
 > > done
 > > ~~~
 > > {: .bash}
