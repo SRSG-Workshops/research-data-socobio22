@@ -74,8 +74,7 @@ Software is like that.
 > We haven't linked to the original haikus because they don't appear to be on *Salon*'s site any longer.
 > As [Jeff Rothenberg said](http://www.clir.org/pubs/archives/ensuring.pdf),
 > "Digital information lasts forever --- or five years, whichever comes first."
->
-> {: .callout}
+{: .callout}
 
 Let's find lines that contain the word "not":
 
@@ -260,8 +259,7 @@ to quickly search for a particular word or data point, `grep` is invaluable.
 > '\^' in the pattern anchors the match to the start of the line. The '.'
 > matches a single character (just like '?' in the shell), while the 'o'
 > matches an actual 'o'.
->
-> {: .callout}
+{: .callout}
 
 ### Finding files themselves
 
@@ -410,8 +408,7 @@ $ find . -name '*.txt'
 > but under normal circumstances,
 > `ls` lists everything it can,
 > while `find` searches for things with certain properties and shows them.
->
-> {: .callout}
+{: .callout}
 
 ### Another way to combine command-line tools
 
@@ -492,8 +489,7 @@ $ grep "FE" $(find .. -name '*.pdb')
 > When the time comes to do this, don't be too hard on the shell: many
 > modern programming languages, Python included, have borrowed a lot of
 > ideas from it, and imitation is also the sincerest form of praise.
->
-> {: .callout}
+{: .callout}
 
 The Bash shell is older than most of the people who use it. It has
 survived so long because it is one of the most productive programming
