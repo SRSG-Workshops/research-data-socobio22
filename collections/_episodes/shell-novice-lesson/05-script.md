@@ -87,8 +87,7 @@ our script's output is exactly what we would get if we ran that pipeline directl
 > nothing but the letters, digits, and punctuation on a standard computer
 > keyboard. When editing programs, therefore, you must either use a plain
 > text editor, or be careful to save files as plain text.
->
-> {: .callout}
+{: .callout}
 
 ### Enabling our script to run on any file
 
@@ -157,8 +156,7 @@ Note the output is the same, since our full data set contains the same first 100
 >
 > This would call `head` on two separate files, `climate` and `data.csv`,
 > which is probably not what we intended.
->
-> {: .callout}
+{: .callout}
 
 ### Adding more arguments to our script
 
@@ -297,8 +295,7 @@ We have the following output:
 >
 > If you find yourself in this situation pressing `Control-C` will stop the
 > command from taking input and return you to the command line prompt.
->
-> {: .callout}
+{: .callout}
 
 Again, we should explain what we are trying to do here using a comment, for example:
 
@@ -343,8 +340,7 @@ wc -l "$@" | sort -n
 > what they discover about their data and their workflow with one call to `history`
 > and a bit of editing to clean up the output
 > and save it as a shell script.
->
-> {: .callout}
+{: .callout}
 
 ## Exercises
 
