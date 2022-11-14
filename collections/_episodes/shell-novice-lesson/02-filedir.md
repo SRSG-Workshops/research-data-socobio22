@@ -168,8 +168,7 @@ which is why `nelle` is the last part of the directory's name.
 > When it appears at the front of a file or directory name,
 > it refers to the root directory. When it appears *inside* a name,
 > it's just a separator.
-> 
-> {: .callout}
+{: .callout}
 
 ### Listing the contents of directories and moving around
 
