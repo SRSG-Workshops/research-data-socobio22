@@ -72,17 +72,16 @@ surveys <- read.csv("data_raw/portal_data_joined.csv")
 When we did `str(surveys)` we saw that several of the columns consist of
 integers.
 
-Please note the default behavior of R has changed recently with the release of
-4.0.0 [https://stat.ethz.ch/pipermail/r-announce/2020/000653.html].
-
-If using R version 3.\*.\*:
+<!-- If using R version 3.\*.\*:
 The columns `genus`, `species`, `sex`, `plot_type`, ... however, are
-of a special class called `factor`.
+of a special class called `factor`. -->
 
-If using R version 4.\*.\*:
-The columns `genus`, `species`, `sex`, `plot_type`, ... are strings! The
-behavior was changed so `stringsAsFactors = FALSE` is the default. So we are all
-working with the same data types please reload the data using the following:
+<!-- If using R version 4.\*.\*: -->
+We can also see that the columns `genus`, `species`, `sex`, `plot_type`, ... are strings. 
+Since the release of R 4.0.0 [https://stat.ethz.ch/pipermail/r-announce/2020/000653.html], 
+`stringsAsFactors = FALSE` is the default.  If we want to work with these columns as 
+factors, we can reload the data with `stringsAsFactors = TRUE`:
+
 ```{r, eval=TRUE,  purl=FALSE}
 surveys <- read.csv("data_raw/portal_data_joined.csv", stringsAsFactors = TRUE)
 ```
@@ -246,7 +245,7 @@ head(sex)
 {: .challenge}
 
 
-### Using `stringsAsFactors=FALSE`
+### Using `stringsAsFactors=FALSE` vs `stringsAsFactors=TRUE`
 
 In R versions previous to 4.0, when building or importing a data frame, the columns that contain
 characters (i.e. text) are coerced (= converted) into factors by default. However, since version 4.0
