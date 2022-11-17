@@ -568,7 +568,7 @@ Note that the final data frame is the leftmost part of this expression.
 > ```{r, answer=TRUE, eval=FALSE, purl=FALSE, results='markup'}
 > surveys_final <- surveys %>%
 >
-> filter(year < 1995, year != 2001, plot_type == 'Control') %>%
+> filter(year > 2000, year != 2001, plot_type == 'Control') %>%
 >
 > select(record_id, month, year, sex, weight)
 > ```
@@ -623,7 +623,8 @@ symbol negates the result, so we're asking for every row where weight *is not* a
 >
 >  Create a new data frame from the `surveys` data that meets the following
 >  criteria: contains only the `species_id` column and a new column called
->  `hindfoot_cm` containing the `hindfoot_length` values converted to centimeters.
+>  `hindfoot_cm` containing the `hindfoot_length` values converted to centimeters
+>  (Assume that `hindfoot_length` is currently in millimetres).
 >  In this `hindfoot_cm` column, there are no `NA`s and all values are less
 >  than 3.
 >

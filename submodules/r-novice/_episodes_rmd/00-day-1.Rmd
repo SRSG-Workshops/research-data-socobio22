@@ -1237,6 +1237,7 @@ In RStudio, you can use the autocompletion feature to get the full and correct n
 >
 > ```{r, answer=TRUE, purl=FALSE}
 > surveys_200 <- surveys[200, ]
+
 > n_rows <- nrow(surveys)
 > ```
 >
@@ -1275,9 +1276,9 @@ In RStudio, you can use the autocompletion feature to get the full and correct n
 > from December of the year 2000.  The dataframe should only contain the variables
 > record_id, genus, and species.
 >
-> ```{r, answer = TRUE, purl=FALSE, results='markup'}
+<!-- > ```{r, answer = TRUE, purl=FALSE, results='markup'}
 > survey_dec_2000 <- surveys[surveys$month == 12 & surveys$year == 2000, c("record_id", "genus", "species")]
-> ```
+> ``` -->
 >
 {: .challenge}
 
